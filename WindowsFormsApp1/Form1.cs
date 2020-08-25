@@ -17,6 +17,13 @@ namespace WindowsFormsApp1
             InitializeComponent();
             // первый комит 
             // добавляю второй комит 
+            button1.Click += new EventHandler(button1_Click);
+
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2(this);
+            form2.Show();
         }
     }
 }
